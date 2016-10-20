@@ -9,7 +9,7 @@
   "dependencies": {
     "react": "15.3.2",
     "react-native": "0.35.0",
-    "react-native-swRefresh": "^1.0.5"
+    "react-native-swRefresh": "^1.0.6"
   },
   "jest": {
     "preset": "jest-react-native"
