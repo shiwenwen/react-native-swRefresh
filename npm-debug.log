@@ -1,0 +1,117 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/sww/.nvm/versions/node/v6.8.0/bin/node',
+1 verbose cli   '/Users/sww/.nvm/versions/node/v6.8.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.8
+3 info using node@v6.8.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/sww/Code/npm/Publish/react-native-swRefresh',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/sww/.npm/react-native-swRefresh/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/sww/.npm correctMkdir not in flight; initializing
+10 info lifecycle react-native-swRefresh@1.0.0~prepublish: react-native-swRefresh@1.0.0
+11 silly lifecycle react-native-swRefresh@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/sww/.npm/react-native-swRefresh/1.0.0/package.tgz',
+12 verbose tar pack   '/Users/sww/Code/npm/Publish/react-native-swRefresh' ]
+13 verbose tarball /Users/sww/.npm/react-native-swRefresh/1.0.0/package.tgz
+14 verbose folder /Users/sww/Code/npm/Publish/react-native-swRefresh
+15 verbose addLocalTarball adding from inside cache /Users/sww/.npm/react-native-swRefresh/1.0.0/package.tgz
+16 verbose correctMkdir /Users/sww/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd react-native-swRefresh@1.0.0
+18 verbose afterAdd /Users/sww/.npm/react-native-swRefresh/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/sww/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/sww/.npm/react-native-swRefresh/1.0.0/package/package.json written
+21 silly publish { version: '1.0.0',
+21 silly publish   name: 'react-native-swRefresh',
+21 silly publish   description: 'react native pull refresh push loadMore scrollView,listView下拉刷新下拉加载控件,支持自定义，简单好用',
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/shiwenwen/react-native-swRefresh.git' },
+21 silly publish   license: 'MIT',
+21 silly publish   main: './index.js',
+21 silly publish   keywords:
+21 silly publish    [ 'react-component',
+21 silly publish      'react-native',
+21 silly publish      'ios',
+21 silly publish      'android',
+21 silly publish      'pull refresh',
+21 silly publish      'push loadMore',
+21 silly publish      '下拉刷新',
+21 silly publish      '上拉加载' ],
+21 silly publish   dependencies: {},
+21 silly publish   readme: '# react-native-swRefresh\n--\n##react-native-swRefresh是提供react-native下拉刷新和下拉加载组件，简单好用，支持自定义 。\n###提供SwRefreshScrollView和SwRefreshListView两种支持下拉刷新的组件，SwRefreshListView支持上拉加载更多。\n--\n##介绍:\n**1. SwRefreshScrollView**\n\n兼容ScrollView的属性\n\n* props:\n\t\n```javascript     \n/**\n* 刷新数据时的操作, 参数 end:function 操作结束时执行end() 以结束刷新状态\n*/\nonRefresh:PropTypes.func,\n/**\n* 需要返回一个自定义的刷新视图,\n* 参数:\n*  refresStatus:RefreshStatus, 0 下拉以刷新 1 松开以刷新 2 刷新中\n*  offsetY:number 下拉的距离 用于自定义刷新\n*/\ncustomRefreshView:PropTypes.func,\n/**\n* 如果自定义刷新视图 需要传递这个视图的高度 默认视图情况下 此属性无效\n*/\ncustomRefreshViewHeight:PropTypes.number\n```\n      \n **2. SwRefreshListView**     \n \n 兼容ListView, SwRefreshScrollView属性\n \n * props:\n \n```javascript  \t\t\t\n/**\n* 自定义底部部刷新指示组件的渲染方法,\n* 参数\n*/\ncustomLoadMoreView:PropTypes.func,\n/**\n* 处于pushing（加载更多时）状态时执行的方法\n* 参数：end，最后执行完操作后应该调用end(isNoMoreData)。\n* isNoMoreData 表示当前是否已经加载完所有数据 已无更多数据\n*/\nonLoadMore:PropTypes.func,\n/**\n* //默认样式中的上拉加载更多的提示语\n*/\npusuToLoadMoreTitle:PropTypes.string,\n/**\n* //默认样式中正在加载的提示语\n*/\nloadingTitle:PropTypes.string,\n/**\n* //默认样式中已无更多时的提示语\n*/\nnoMoreDataTitle:PropTypes.string,\n/**\n* 是否显示底部的加载更多 通常用于全部数据不足一页 底部还显示加载更多导致的难看\n*/\nisShowLoadMore:PropTypes.bool\n```\n\t    \n * func:\n \n```javascript \t\n/**\n* 重置已无更多数据的状态 通常用于下拉刷新数据完毕后 重置状态\n*/\nresetStatus()\n```\t\t  \t\n\t\t  \t\n \t   \n##使用:\n\tnpm install react-native-swRefresh --save    \n* 导入\n\n```javascript\t\t\t\n//根据需要引入\nimport {\n  SwRefreshScrollView,\n  SwRefreshListView,\n  RefreshStatus, //刷新状态 用于自定义\n  LoadMoreStatus //上拉加载状态 用于自定义\n} from \'react-native-swRefresh\'\n```\n\t\t\n*  **Demo**: SwRefreshScrollView\n  \n```javascript\t\t\n\t<SwRefreshScrollView\n\t\tonRefresh={this._onRefresh.bind(this)}\n\t\t//其他你需要设定的属性(包括ScrollView的属性)\n\t>\n\t\t<View style={styles.content}>\n\t\t\t<Text>下拉刷新ScrollView</Text>\n\t\t</View>\n\t</SwRefreshScrollView>\n\t-------------------------------------------------------------------------------\n\t/**\n\t* 模拟刷新\n\t* @param end\n\t* @private\n\t*/\n\t_onRefresh(end){\n\t\tlet timer =  setTimeout(()=>{\n\t\t clearTimeout(timer)\n\t\t alert(\'刷新成功\')\n\t\t\n\t\t end()//刷新成功后需要调用end结束刷新\n\t\t\n\t\t},1500)\n\t}\n```\t\t\n\t\t\n\t\n*  **Demo**: SwRefreshListView\n\t\n```javascript\t\t\n <SwRefreshListView\n    dataSource={this.state.dataSource}\n    ref="listView"\n    renderRow={this._renderRow.bind(this)}\n    onRefresh={this._onListRefersh.bind(this)}\n    onLoadMore={this._onLoadMore.bind(this)}\n   //其他需要设置的ListView属性\n/>\n -------------------------------------------------------------------------------\n /**\n   * 模拟刷新\n   * @param end\n   * @private\n   */\n  _onListRefersh(end){\n    let timer =  setTimeout(()=>{\n      clearTimeout(timer)\n      this._page=0\n      let data = []\n      for (let i = 0;i<10;i++){\n        data.push(i)\n      }\n      this.setState({\n        dataSource:this._dataSource.cloneWithRows(data)\n      })\n      this.refs.listView.resetStatus() //重置上拉加载的状态\n      end()//刷新成功后需要调用end结束刷新\n\t\n    },1500)\n  }\n\t\n  /**\n   * 模拟加载更多\n   * @param end\n   * @private\n   */\n  _onLoadMore(end){\n    let timer =  setTimeout(()=>{\n      clearTimeout(timer)\n      this._page++\n      let data = []\n      for (let i = 0;i<(this._page+1)*10;i++){\n        data.push(i)\n      }\n      this.setState({\n        dataSource:this._dataSource.cloneWithRows(data)\n      })\n      end(this._page > 2)//加载成功后需要调用end结束刷新 假设加载4页后数据全部加载完毕\n\t\n    },2000)\n  }\n```\t\t  \n\t\t  \n\t\t  \n###具体查看Demo\n###演示\n\n![image](https://github.com/shiwenwen/react-native-swRefresh/blob/master/screenshot/refresh1.gif?raw=true)\n\n----\n\n![image](https://github.com/shiwenwen/react-native-swRefresh/blob/master/screenshot/refresh2.gif?raw=true)\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'bb3d9819f0fcaf65f1422d161725e70c7603199e',
+21 silly publish   bugs: { url: 'https://github.com/shiwenwen/react-native-swRefresh/issues' },
+21 silly publish   homepage: 'https://github.com/shiwenwen/react-native-swRefresh#readme',
+21 silly publish   _id: 'react-native-swRefresh@1.0.0',
+21 silly publish   scripts: {},
+21 silly publish   _shasum: '18e065304bf62ae638332adb2cd7218f33c24e7f',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name react-native-swRefresh
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry http://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'react-native-swRefresh',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'react-native-swRefresh',
+26 silly mapToRegistry   name: 'react-native-swRefresh',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri http://registry.npmjs.org/react-native-swRefresh
+28 verbose publish registryBase http://registry.npmjs.org/
+29 silly publish uploading /Users/sww/.npm/react-native-swRefresh/1.0.0/package.tgz
+30 verbose request uri http://registry.npmjs.org/react-native-swRefresh
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 15:45:12
+33 verbose request using bearer token for auth
+34 verbose request id 2b418d1163937892
+35 http request PUT http://registry.npmjs.org/react-native-swRefresh
+36 http 403 http://registry.npmjs.org/react-native-swRefresh
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '128',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Thu, 20 Oct 2016 07:45:17 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-lcy1146-LCY',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1476949512.419322,VS0,VE4951',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/sww/.npm/registry.npmjs.org/react-native-swRefresh on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.0.0. Try bumping the version to 2.0.0" : react-native-swRefresh
+40 verbose stack     at makeError (/Users/sww/.nvm/versions/node/v6.8.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/Users/sww/.nvm/versions/node/v6.8.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/Users/sww/.nvm/versions/node/v6.8.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/Users/sww/.nvm/versions/node/v6.8.0/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/Users/sww/.nvm/versions/node/v6.8.0/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/Users/sww/.nvm/versions/node/v6.8.0/lib/node_modules/npm/node_modules/request/request.js:965:12)
+41 verbose statusCode 403
+42 verbose pkgid react-native-swRefresh
+43 verbose cwd /Users/sww/Code/npm/Publish/react-native-swRefresh
+44 error Darwin 16.0.0
+45 error argv "/Users/sww/.nvm/versions/node/v6.8.0/bin/node" "/Users/sww/.nvm/versions/node/v6.8.0/bin/npm" "publish"
+46 error node v6.8.0
+47 error npm  v3.10.8
+48 error code E403
+49 error "You cannot publish over the previously published version 1.0.0. Try bumping the version to 2.0.0" : react-native-swRefresh
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
