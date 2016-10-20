@@ -1,6 +1,6 @@
 # react-native-swRefresh
 --
-##react-native-swRefresh是提供react-native下拉刷新和下拉加载组件，简单好用，支持自定义 。
+##react-native-swRefresh是提供react-native下拉刷新和下拉加载组件，简单好用，支持自定义 ，iOS,Android通用。
 ###提供SwRefreshScrollView和SwRefreshListView两种支持下拉刷新的组件，SwRefreshListView支持上拉加载更多。
 ####因为刚接触，改着改着就有点冗余，代码不是很优美，会慢慢优化的
 --
