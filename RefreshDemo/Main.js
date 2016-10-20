@@ -28,7 +28,7 @@ export default class Main extends Component{
 
       // 初始状态
       this.state = {
-        dataSource:this._dataSource.cloneWithRows([0,1,2,3,4,5,6,7,8,9,0])
+        dataSource:this._dataSource.cloneWithRows([0,1,2,3,4,5,6,7,8,9])
       };
     }
 
@@ -49,6 +49,7 @@ export default class Main extends Component{
     return(
       <SwRefreshScrollView
         onRefresh={this._onRefresh.bind(this)}
+        ref="scrollView"
         //其他你需要设定的属性(包括ScrollView的属性)
       >
         <View style={styles.content}>
@@ -72,10 +73,13 @@ export default class Main extends Component{
         renderRow={this._renderRow.bind(this)}
         onRefresh={this._onListRefersh.bind(this)}
         onLoadMore={this._onLoadMore.bind(this)}
-        //isShowLoadMore={false}
-        customRefreshView={(refresStatus,offsetY)=>{
-            return (<Text>{'状态:'+refresStatus+','+offsetY}</Text>)
+        isShowLoadMore={false}
+        renderFooter={()=>{
+          return <View style={{backgroundColor:'blue',height:30}}></View>
         }}
+        customLoadMoreView={
+          ()=>null
+        }
       />
     )
 
@@ -121,8 +125,9 @@ export default class Main extends Component{
         dataSource:this._dataSource.cloneWithRows(data)
       })
       this.refs.listView.resetStatus() //重置上拉加载的状态
-      end()//刷新成功后需要调用end结束刷新
 
+      end()//刷新成功后需要调用end结束刷新
+      // this.refs.listView.endRefresh() //建议使用end() 当然 这个可以在任何地方使用
     },1500)
   }
 
@@ -145,6 +150,13 @@ export default class Main extends Component{
       end(this._page > 2)//加载成功后需要调用end结束刷新 假设加载4页后数据全部加载完毕
 
     },2000)
+  }
+
+  componentDidMount() {
+   let timer = setTimeout(()=>{
+     clearTimeout(timer)
+      this.refs.listView.beginRefresh()
+    },500) //自动调用刷新 新增方法
   }
 
 }

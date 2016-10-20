@@ -4,6 +4,10 @@
 ###提供SwRefreshScrollView和SwRefreshListView两种支持下拉刷新的组件，SwRefreshListView支持上拉加载更多。
 --
 ##介绍:[简书上有更详细的介绍](http://www.jianshu.com/p/cb029455f9cd)
+	
+####新增beginRefresh()和endRefresh()方法来手动调用下拉刷新和结束下拉刷新 类iOS中的MJRefrsh
+	
+--
 **1. SwRefreshScrollView**
 
 
@@ -158,7 +162,7 @@ import {
       })
       this.refs.listView.resetStatus() //重置上拉加载的状态
       end()//刷新成功后需要调用end结束刷新
-	
+	// this.refs.listView.endRefresh() //新增方法 建议使用end() 。当然这个可以在任何地方使用
     },1500)
   }
 	
@@ -181,6 +185,13 @@ import {
       end(this._page > 2)//加载成功后需要调用end结束刷新 假设加载4页后数据全部加载完毕
 	
     },2000)
+  }
+  
+ componentDidMount() {
+   let timer = setTimeout(()=>{
+     clearTimeout(timer)
+      this.refs.listView.beginRefresh()
+    },500) //自动调用刷新 新增方法
   }
 ```		  
 		  
