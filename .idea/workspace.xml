@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86c164be-686c-4b4e-9cf8-fd9f377e121c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RefreshDemo/Main.js" afterPath="$PROJECT_DIR$/RefreshDemo/Main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/SwRefresh.js" afterPath="$PROJECT_DIR$/lib/SwRefresh.js" />
-    </list>
+    <list default="true" id="86c164be-686c-4b4e-9cf8-fd9f377e121c" name="Default" comment="" />
     <ignored path="react-native-swRefresh.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -74,8 +69,8 @@
       <file leaf-file-name="Main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RefreshDemo/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="154" column="2" selection-start-line="154" selection-start-column="2" selection-end-line="159" selection-end-column="3" />
+            <state relative-caret-position="566">
+              <caret line="161" column="1" selection-start-line="161" selection-start-column="1" selection-end-line="161" selection-end-column="1" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#41#82#0" expanded="true" />
@@ -241,12 +236,12 @@
       <option name="presentableId" value="Default" />
       <updated>1476950754931</updated>
       <workItem from="1476950756534" duration="1199000" />
-      <workItem from="1476952884085" duration="5552000" />
+      <workItem from="1476952884085" duration="5605000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6751000" />
+    <option name="totallyTimeSpent" value="6804000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -413,8 +408,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RefreshDemo/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="154" column="2" selection-start-line="154" selection-start-column="2" selection-end-line="159" selection-end-column="3" />
+        <state relative-caret-position="566">
+          <caret line="161" column="1" selection-start-line="161" selection-start-column="1" selection-end-line="161" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#41#82#0" expanded="true" />

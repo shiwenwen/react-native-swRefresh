@@ -162,7 +162,7 @@ import {
       })
       this.refs.listView.resetStatus() //重置上拉加载的状态
       end()//刷新成功后需要调用end结束刷新
-	// this.refs.listView.endRefresh() //新增方法 建议使用end() 。当然这个可以在任何地方使用
+	// this.refs.listView.endRefresh() //新增方法 结束刷新 建议使用end() 。当然这个可以在任何地方使用
     },1500)
   }
 	
@@ -191,7 +191,7 @@ import {
    let timer = setTimeout(()=>{
      clearTimeout(timer)
       this.refs.listView.beginRefresh()
-    },500) //自动调用刷新 新增方法
+    },500) //自动调用开始刷新 新增方法
   }
 ```		  
 		  
