@@ -73,6 +73,9 @@ export default class Main extends Component{
         onRefresh={this._onListRefersh.bind(this)}
         onLoadMore={this._onLoadMore.bind(this)}
         //isShowLoadMore={false}
+        customRefreshView={(refresStatus,offsetY)=>{
+            return (<Text>{'状态:'+refresStatus+','+offsetY}</Text>)
+        }}
       />
     )
 
