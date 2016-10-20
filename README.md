@@ -122,9 +122,8 @@ import {
 	* @private
 	*/
 	_onRefresh(end){
-		//只做演示 所以timer不做清除了 以下都一样
 		let timer =  setTimeout(()=>{
-
+		 clearTimeout(timer)
 		 alert('刷新成功')
 		
 		 end()//刷新成功后需要调用end结束刷新

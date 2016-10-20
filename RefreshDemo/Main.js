@@ -99,6 +99,7 @@ export default class Main extends Component{
    */
   _onRefresh(end){
    let timer =  setTimeout(()=>{
+     clearTimeout(timer)
       alert('刷新成功')
 
      end()//刷新成功后需要调用end结束刷新
@@ -113,8 +114,8 @@ export default class Main extends Component{
    * @private
    */
   _onListRefersh(end){
-    //只做演示 所以timer不做清除了 以下都一样
     let timer =  setTimeout(()=>{
+      clearTimeout(timer)
       this._page=0
       let data = []
       for (let i = 0;i<10;i++){
@@ -137,6 +138,7 @@ export default class Main extends Component{
    */
   _onLoadMore(end){
     let timer =  setTimeout(()=>{
+      clearTimeout(timer)
       this._page++
       let data = []
       for (let i = 0;i<(this._page+1)*10;i++){
@@ -152,6 +154,7 @@ export default class Main extends Component{
 
   componentDidMount() {
    let timer = setTimeout(()=>{
+     clearTimeout(timer)
       this.refs.listView.beginRefresh()
     },500) //自动调用刷新 新增方法
   }
