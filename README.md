@@ -71,6 +71,16 @@ isShowLoadMore:PropTypes.bool
 * 重置已无更多数据的状态 通常用于下拉刷新数据完毕后 重置状态
 */
 resetStatus()
+/**
+* 直接将状态置为没有更多数据状态 通常用于第一次刷新加载的后数据已全部加载 不必下拉刷新
+* 也可使用 isShowLoadMore:PropTypes.bool将上拉加载组件隐藏
+*/
+setNoMoreData(){
+this.setState({
+  loadStatus:LoadMoreStatus.noMoreData
+})
+}
+
 ```		  	
 		  	
  	   
