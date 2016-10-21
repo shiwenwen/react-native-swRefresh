@@ -8,7 +8,8 @@ import {
   Text,
   View,
   Dimensions,
-  ListView
+  ListView,
+
 } from 'react-native';
 import {
   SwRefreshScrollView,
@@ -16,6 +17,7 @@ import {
   RefreshStatus,
   LoadMoreStatus
 } from 'react-native-swRefresh'
+
 const {width,height}=Dimensions.get('window')
 export default class Main extends Component{
     _page=0
@@ -74,7 +76,11 @@ export default class Main extends Component{
         onRefresh={this._onListRefersh.bind(this)}
         onLoadMore={this._onLoadMore.bind(this)}
         //isShowLoadMore={false}
-        //renderFooter={()=>{return <View style={{backgroundColor:'blue',height:30}}></View>}}
+        renderFooter={()=>{return
+          (<View style={{backgroundColor:'blue',height:30}}>
+            <Text>我是footer</Text>
+          </View>)
+          }}
 
       />
     )

@@ -1,5 +1,5 @@
 {
-    "version": "1.0.8",
+    "version": "1.0.9",
     "name": "react-native-swRefresh",
     "description": "react native pull refresh push loadMore scrollView,listView下拉刷新下拉加载控件,支持自定义，简单好用",
     "repository": {
