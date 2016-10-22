@@ -6,12 +6,8 @@
 --
 ##介绍:[简书上有更详细的介绍](http://www.jianshu.com/p/cb029455f9cd)
 	
-####新增beginRefresh()和endRefresh()方法来手动调用下拉刷新和结束下拉刷新 类iOS中的MJRefrsh
 	
---
 **1. SwRefreshScrollView**
-(在Android中SwRefreshScrollView是个空实现，SwRefreshListView支持支持下拉刷新和上拉加载)
-
 
 兼容ScrollView的属性
 
@@ -34,6 +30,20 @@ customRefreshView:PropTypes.func,
 */
 customRefreshViewHeight:PropTypes.number
 ```
+ * func:
+ 
+```javascript 	
+/**
+* 手动调用刷新
+*/
+beginRefresh()
+  
+/**
+* 手动结束 推荐end()回调
+*/
+endRefresh()
+
+```	
       
  **2. SwRefreshListView**     
  
@@ -82,11 +92,17 @@ resetStatus()
 * 直接将状态置为没有更多数据状态 通常用于第一次刷新加载的后数据已全部加载 不必下拉刷新
 * 也可使用 isShowLoadMore:PropTypes.bool将上拉加载组件隐藏
 */
-setNoMoreData(){
-this.setState({
-  loadStatus:LoadMoreStatus.noMoreData
-})
-}
+setNoMoreData()
+
+/**
+* 手动调用刷新
+*/
+beginRefresh()
+  
+/**
+* 手动结束 推荐end()回调
+*/
+endRefresh()
 
 ```		  	
 		  	
