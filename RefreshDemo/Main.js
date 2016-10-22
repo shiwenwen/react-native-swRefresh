@@ -36,9 +36,9 @@ export default class Main extends Component{
 
   render(){
 
-    return this._renderScrollView() //ScrollView Demo ScrollView不支持上拉加载
+    // return this._renderScrollView() //ScrollView Demo ScrollView不支持上拉加载
 
-    // return this._renderListView() // ListView Demo
+    return this._renderListView() // ListView Demo
   }
 
 
@@ -157,8 +157,8 @@ export default class Main extends Component{
   componentDidMount() {
    let timer = setTimeout(()=>{
      clearTimeout(timer)
-      this.refs.scrollView.beginRefresh()
-     // this.refs.listView.beginRefresh()
+      // this.refs.scrollView.beginRefresh()
+     this.refs.listView.beginRefresh()
     },500) //自动调用刷新 新增方法
   }
 
