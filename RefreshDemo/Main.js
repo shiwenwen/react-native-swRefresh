@@ -16,7 +16,7 @@ import {
   SwRefreshListView,
   RefreshStatus,
   LoadMoreStatus
-} from 'react-native-swRefresh'
+} from './SwRefresh'
 
 const {width,height}=Dimensions.get('window')
 export default class Main extends Component{
@@ -157,7 +157,8 @@ export default class Main extends Component{
   componentDidMount() {
    let timer = setTimeout(()=>{
      clearTimeout(timer)
-      this.refs.listView.beginRefresh()
+      // this.refs.scrollView.beginRefresh()
+     this.refs.listView.beginRefresh()
     },500) //自动调用刷新 新增方法
   }
 
