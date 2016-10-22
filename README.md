@@ -222,3 +222,11 @@ import {
 ----
 
 ![image](https://github.com/shiwenwen/react-native-swRefresh/blob/master/screenshot/refresh2.gif?raw=true)
+
+----
+
+![image](https://github.com/shiwenwen/react-native-swRefresh/blob/master/screenshot/refresh3.gif?raw=true)
+
+-----
+
+![image](https://github.com/shiwenwen/react-native-swRefresh/blob/master/screenshot/refresh4.gif?raw=true)
