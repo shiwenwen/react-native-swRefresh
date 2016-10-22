@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86c164be-686c-4b4e-9cf8-fd9f377e121c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RefreshDemo/Main.js" afterPath="$PROJECT_DIR$/RefreshDemo/Main.js" />
     </list>
     <ignored path="react-native-swRefresh.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RefreshDemo/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3059">
+            <state relative-caret-position="760">
               <caret line="161" column="24" selection-start-line="161" selection-start-column="24" selection-end-line="161" selection-end-column="24" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -80,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SwRefreshScrollView.ios.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SwRefreshScrollView.ios.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/SwRefreshScrollView.ios.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="110" column="2" selection-start-line="110" selection-start-column="2" selection-end-line="113" selection-end-column="14" />
+            <state relative-caret-position="589">
+              <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -121,9 +121,9 @@
         <option value="$PROJECT_DIR$/RefreshDemo/SwRefreshListView.ios.js" />
         <option value="$PROJECT_DIR$/RefreshDemo/SwRefreshListView.android.js" />
         <option value="$PROJECT_DIR$/RefreshDemo/SwRefreshScrollView.android.js" />
-        <option value="$PROJECT_DIR$/RefreshDemo/Main.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/RefreshDemo/package.json" />
+        <option value="$PROJECT_DIR$/RefreshDemo/Main.js" />
       </list>
     </option>
   </component>
@@ -302,12 +302,12 @@
       <workItem from="1476952884085" duration="11511000" />
       <workItem from="1477040521818" duration="8925000" />
       <workItem from="1477053783510" duration="300000" />
-      <workItem from="1477060141286" duration="3823000" />
+      <workItem from="1477060141286" duration="4005000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25758000" />
+    <option name="totallyTimeSpent" value="25940000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -645,17 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RefreshDemo/Main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3059">
-          <caret line="161" column="24" selection-start-line="161" selection-start-column="24" selection-end-line="161" selection-end-column="24" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#41#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/SwRefresh.android.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -684,9 +673,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/SwRefreshScrollView.ios.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="110" column="2" selection-start-line="110" selection-start-column="2" selection-end-line="113" selection-end-column="14" />
+        <state relative-caret-position="589">
+          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RefreshDemo/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="161" column="24" selection-start-line="161" selection-start-column="24" selection-end-line="161" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#41#82#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
