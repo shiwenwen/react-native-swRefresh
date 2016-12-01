@@ -213,7 +213,14 @@ export class SwRefreshListView extends ListView{
    * @private
    */
   _rendrFooter(){
+    if (!this.props.isShowLoadMore){
+      return (
+        <View>
+          {this.props.renderFooter?this.props.renderFooter():null}
+        </View>
+      )
 
+    }
     if (this.props.customLoadMoreView) {
       return (
         <View>
@@ -325,7 +332,7 @@ export class SwRefreshListView extends ListView{
   _rendRefreshheader(){
 
       return(
-        <View>
+        <View style={{width:this.props.style.width}}>
           {this.props.renderHeader?this.props.renderHeader():null}
           {this.props.customRefreshView?this._renderCustomHeader():this._renderDefaultHeader()}
         </View>

@@ -157,7 +157,14 @@ export class SwRefreshListView extends ListView{
    * @private
    */
   _rendrFooter(){
+    if (!this.props.isShowLoadMore){
+      return (
+        <View>
+          {this.props.renderFooter?this.props.renderFooter():null}
+        </View>
+      )
 
+    }
     if (this.props.customLoadMoreView) {
       return (
         <View>

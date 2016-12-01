@@ -75,7 +75,7 @@ export default class Main extends Component{
         renderRow={this._renderRow.bind(this)}
         onRefresh={this._onListRefersh.bind(this)}
         onLoadMore={this._onLoadMore.bind(this)}
-        //isShowLoadMore={false}
+        isShowLoadMore={false}
         renderFooter={()=>{return
           (<View style={{backgroundColor:'blue',height:30}}>
             <Text>我是footer</Text>

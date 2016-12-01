@@ -38,17 +38,6 @@ export const RefreshStatus={
   releaseToRefresh:1,
   refreshing:2
 }
-
-/**
- * 上拉加载更多的各状态  1 加载中 2 加载完毕 3 加载完毕 无更多数据
- * @type {loading: number, finish: number, noMoreData: number}}
- */
-
-export const LoadMoreStatus={
-  loading:1,
-  finish:2,
-  noMoreData:3
-}
 /**
  *===============================================SwRefreshscrollView=====================================
  */
@@ -121,18 +110,6 @@ export class SwRefreshScrollView extends ScrollView{
   endRefresh(){
     this._onRefreshEnd()
   }
-
-//----------------------------------------------
-
-  static defaultProps={
-    pusuToLoadMoreTitle:'上拉加载更多~~~~',
-    loadingTitle:'加载中~~~',
-    noMoreDataTitle:'已经加载到底啦（￣︶￣)~~',
-    isShowLoadMore:true
-
-  }
-
-
   render(){
     return(
       <ScrollView
@@ -150,92 +127,6 @@ export class SwRefreshScrollView extends ScrollView{
       </ScrollView>
     )
   }
-  //-----------------------上拉加载部分-------------------------------
-  /**
-   * 渲染footer和上拉加载组件
-   * @returns {XML}
-   * @private
-   */
-  _rendrFooter(){
-
-    if (this.props.customLoadMoreView) {
-      return (
-        <View>
-          {this.props.renderFooter?this.props.renderFooter():null}
-          {this.props.customLoadMoreView(this.state.loadStatus)}
-        </View>
-      )
-
-    }
-
-    if (this.state.loadStatus == LoadMoreStatus.noMoreData){
-      return(
-        <View>
-          {this.props.renderFooter?this.props.renderFooter():null}
-          <View style={footStyles.footer}>
-            <Text style={footStyles.footerText}>{this.props.noMoreDataTitle}</Text>
-          </View>
-        </View>
-
-      )
-
-    }else if(this.state.loadStatus == LoadMoreStatus.finish){
-      return(
-        <View>
-          {this.props.renderFooter?this.props.renderFooter():null}
-          <View style={footStyles.footer}>
-            <ActivityIndicator/>
-            <Text style={footStyles.footerText}>{this.props.pusuToLoadMoreTitle}</Text>
-          </View>
-        </View>
-      )
-    }else if(this.state.loadStatus == LoadMoreStatus.loading){
-      return(
-        <View>
-          {this.props.renderFooter?this.props.renderFooter():null}
-          <View style={footStyles.footer}>
-            <ActivityIndicator/>
-            <Text style={footStyles.footerText}>{this.props.loadingTitle}</Text>
-          </View>
-        </View>
-      )
-
-    }
-
-  }
-
-  /**
-   * 上刷拉操作
-   * @param event
-   * @private
-   */
-  _onEndReached(event){
-    if (this.state.loadStatus == LoadMoreStatus.noMoreData || this._isLoading || !this.props.isShowLoadMore){
-      return
-    }
-    this._isLoading = true
-    this.setState({
-      loadStatus:1
-    })
-    this.timer = setTimeout(()=>{
-      if (this.props.onLoadMore){
-        this.props.onLoadMore((isNoMoreData)=>{
-          this._isLoading = false
-          this.setState({
-            loadStatus:isNoMoreData ? LoadMoreStatus.noMoreData:LoadMoreStatus.finish
-          })
-        })
-      }
-    },500)
-
-    if(this.props.onEndReached){
-      this.props.onEndReached(event)
-    }
-
-  }
-
-
-
 
   componentDidMount(){
 
@@ -269,7 +160,7 @@ export class SwRefreshScrollView extends ScrollView{
   _rendRefreshheader(){
 
     return(
-      <View>
+      <View style={{width:this.props.style.width}}>
         {this.props.renderHeader?this.props.renderHeader():null}
         {this.props.customRefreshView?this._renderCustomHeader():this._renderDefaultHeader()}
       </View>
