@@ -30,7 +30,7 @@ export default class Main extends Component{
 
       // 初始状态
       this.state = {
-        dataSource:this._dataSource.cloneWithRows([0,1,2,3,4,5,6,7,8,9])
+        dataSource:this._dataSource.cloneWithRows([])
       };
     }
 
@@ -158,7 +158,7 @@ export default class Main extends Component{
    let timer = setTimeout(()=>{
      clearTimeout(timer)
       // this.refs.scrollView.beginRefresh()
-     this.refs.listView.beginRefresh()
+     // this.refs.listView.beginRefresh()
     },500) //自动调用刷新 新增方法
   }
 
