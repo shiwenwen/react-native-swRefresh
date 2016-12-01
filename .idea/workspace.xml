@@ -2,19 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86c164be-686c-4b4e-9cf8-fd9f377e121c" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/SwRefresh.android.js" afterPath="$PROJECT_DIR$/RefreshDemo/lib/SwRefresh.android.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/SwRefresh.ios.js" afterPath="$PROJECT_DIR$/RefreshDemo/lib/SwRefresh.ios.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/SwRefreshListView.android.js" afterPath="$PROJECT_DIR$/RefreshDemo/lib/SwRefreshListView.android.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/SwRefreshListView.ios.js" afterPath="$PROJECT_DIR$/RefreshDemo/lib/SwRefreshListView.ios.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/SwRefreshScrollView.android.js" afterPath="$PROJECT_DIR$/RefreshDemo/lib/SwRefreshScrollView.android.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/SwRefreshScrollView.ios.js" afterPath="$PROJECT_DIR$/RefreshDemo/lib/SwRefreshScrollView.ios.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/Tools.js" afterPath="$PROJECT_DIR$/RefreshDemo/lib/Tools.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RefreshDemo/lib/SwRefresh.android.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RefreshDemo/lib/SwRefresh.ios.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RefreshDemo/lib/SwRefreshListView.android.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RefreshDemo/lib/SwRefreshListView.ios.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RefreshDemo/lib/SwRefreshScrollView.android.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RefreshDemo/lib/SwRefreshScrollView.ios.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RefreshDemo/lib/Tools.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/RefreshDemo/lib/SwRefresh.android.js" afterPath="$PROJECT_DIR$/lib/SwRefresh.android.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/RefreshDemo/lib/SwRefresh.ios.js" afterPath="$PROJECT_DIR$/lib/SwRefresh.ios.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/RefreshDemo/lib/SwRefreshListView.android.js" afterPath="$PROJECT_DIR$/lib/SwRefreshListView.android.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/RefreshDemo/lib/SwRefreshListView.ios.js" afterPath="$PROJECT_DIR$/lib/SwRefreshListView.ios.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/RefreshDemo/lib/SwRefreshScrollView.android.js" afterPath="$PROJECT_DIR$/lib/SwRefreshScrollView.android.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/RefreshDemo/lib/SwRefreshScrollView.ios.js" afterPath="$PROJECT_DIR$/lib/SwRefreshScrollView.ios.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/RefreshDemo/lib/Tools.js" afterPath="$PROJECT_DIR$/lib/Tools.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RefreshDemo/Main.js" afterPath="$PROJECT_DIR$/RefreshDemo/Main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RefreshDemo/android/build.gradle" afterPath="$PROJECT_DIR$/RefreshDemo/android/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RefreshDemo/android/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/RefreshDemo/android/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RefreshDemo/package.json" afterPath="$PROJECT_DIR$/RefreshDemo/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="react-native-swRefresh.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,18 +52,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SwRefresh.android.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RefreshDemo/lib/SwRefresh.android.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-              <folding>
-                <element signature="e#42#124#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SwRefreshListView.ios.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RefreshDemo/node_modules/react-native-swRefresh/lib/SwRefreshListView.ios.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -74,10 +64,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SwRefresh.android.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/SwRefresh.android.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SwRefreshScrollView.ios.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RefreshDemo/node_modules/react-native-swRefresh/lib/SwRefreshScrollView.ios.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
+            <state relative-caret-position="513">
               <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -140,12 +140,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RefreshDemo/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-              <folding />
+            <state relative-caret-position="456">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding>
+                <marker date="1480565386000" expanded="true" signature="0:536" ph="{&quot;name&quot;: &quot;RefreshDemo&quot;...}" />
+                <marker date="1480565386000" expanded="true" signature="195:292" ph="{&quot;react&quot;: &quot;15.3.2&quot;...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -261,6 +264,112 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-native-swRefresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-native-swRefresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RefreshDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-native-swRefresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-native-swRefresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RefreshDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-native-swRefresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-native-swRefresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-native-swRefresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RefreshDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-native-swRefresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RefreshDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-native-swRefresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-native-swRefresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RefreshDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-native-swRefresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-native-swRefresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-native-swRefresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -279,8 +388,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/RefreshDemo/lib" />
       <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$/RefreshDemo/lib" />
       <recent name="$PROJECT_DIR$/RefreshDemo" />
     </key>
   </component>
@@ -358,12 +467,12 @@
       <workItem from="1477053783510" duration="300000" />
       <workItem from="1477060141286" duration="10063000" />
       <workItem from="1477387266680" duration="595000" />
-      <workItem from="1480500234916" duration="4970000" />
+      <workItem from="1480500234916" duration="5705000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37563000" />
+    <option name="totallyTimeSpent" value="38298000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -491,7 +600,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1480565386000" expanded="true" signature="0:536" ph="{&quot;name&quot;: &quot;RefreshDemo&quot;...}" />
+            <marker date="1480565386000" expanded="true" signature="195:292" ph="{&quot;react&quot;: &quot;15.3.2&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -565,14 +677,6 @@
     <entry file="file://$PROJECT_DIR$/RefreshDemo/SwRefreshScrollView.ios.js" />
     <entry file="file://$PROJECT_DIR$/RefreshDemo/SwRefreshListView.android.js" />
     <entry file="file://$PROJECT_DIR$/RefreshDemo/SwRefreshScrollView.android.js" />
-    <entry file="file://$PROJECT_DIR$/lib/SwRefresh.android.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/SwRefreshListView.android.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
@@ -625,31 +729,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RefreshDemo/node_modules/react-native-swRefresh/lib/SwRefreshListView.ios.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="158" column="14" selection-start-line="158" selection-start-column="2" selection-end-line="158" selection-end-column="14" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RefreshDemo/node_modules/react-native-swRefresh/lib/SwRefreshScrollView.android.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1843">
           <caret line="111" column="3" selection-start-line="111" selection-start-column="3" selection-end-line="111" selection-end-column="3" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RefreshDemo/node_modules/react-native-swRefresh/lib/SwRefreshScrollView.ios.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -668,8 +752,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RefreshDemo/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <element signature="e#42#124#0" expanded="true" />
+            <marker date="1480565386000" expanded="true" signature="0:536" ph="{&quot;name&quot;: &quot;RefreshDemo&quot;...}" />
+            <marker date="1480565386000" expanded="true" signature="195:292" ph="{&quot;react&quot;: &quot;15.3.2&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RefreshDemo/node_modules/react-native-swRefresh/lib/SwRefreshScrollView.ios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -682,10 +785,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RefreshDemo/package.json">
+    <entry file="file://$PROJECT_DIR$/RefreshDemo/node_modules/react-native-swRefresh/lib/SwRefreshListView.ios.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        <state relative-caret-position="366">
+          <caret line="158" column="14" selection-start-line="158" selection-start-column="2" selection-end-line="158" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/SwRefresh.android.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding />
         </state>
       </provider>
