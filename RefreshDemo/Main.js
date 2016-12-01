@@ -30,7 +30,7 @@ export default class Main extends Component{
 
       // 初始状态
       this.state = {
-        dataSource:this._dataSource.cloneWithRows([])
+        dataSource:this._dataSource.cloneWithRows([0,1,2,3,4,5,6,7,8,9])
       };
     }
 
@@ -75,7 +75,7 @@ export default class Main extends Component{
         renderRow={this._renderRow.bind(this)}
         onRefresh={this._onListRefersh.bind(this)}
         onLoadMore={this._onLoadMore.bind(this)}
-        isShowLoadMore={false}
+        //isShowLoadMore={false}
         renderFooter={()=>{return
           (<View style={{backgroundColor:'blue',height:30}}>
             <Text>我是footer</Text>
@@ -149,8 +149,8 @@ export default class Main extends Component{
       this.setState({
         dataSource:this._dataSource.cloneWithRows(data)
       })
-      end(this._page > 2)//加载成功后需要调用end结束刷新 假设加载4页后数据全部加载完毕
-
+      //end(this._page > 2)//加载成功后需要调用end结束刷新 假设加载4页后数据全部加载完毕
+      this.refs.listView.endLoadMore(this._page > 2)
     },2000)
   }
 
@@ -158,7 +158,7 @@ export default class Main extends Component{
    let timer = setTimeout(()=>{
      clearTimeout(timer)
       // this.refs.scrollView.beginRefresh()
-     // this.refs.listView.beginRefresh()
+     this.refs.listView.beginRefresh()
     },500) //自动调用刷新 新增方法
   }
 

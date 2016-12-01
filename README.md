@@ -47,7 +47,7 @@ endRefresh()
       
  **2. SwRefreshListView**     
  
- 兼容ListView, SwRefreshScrollView属性
+ 兼容ListView, SwRefreshScrollView属性 新增endLoadMore方法
  
  * props:
  
@@ -103,7 +103,11 @@ beginRefresh()
 * 手动结束 推荐end()回调
 */
 endRefresh()
-
+/*
+ * 手动结束加载
+ * isNoMoreData 表示当前是否已经加载完所有数据 已无更多数据
+ * */
+ endLoadMore(isNoMoreData)
 ```		  	
 		  	
  	   
