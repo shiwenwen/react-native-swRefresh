@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86c164be-686c-4b4e-9cf8-fd9f377e121c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RefreshDemo/Main.js" afterPath="$PROJECT_DIR$/RefreshDemo/Main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RefreshDemo/package.json" afterPath="$PROJECT_DIR$/RefreshDemo/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/SwRefreshListView.android.js" afterPath="$PROJECT_DIR$/lib/SwRefreshListView.android.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/SwRefreshScrollView.android.js" afterPath="$PROJECT_DIR$/lib/SwRefreshScrollView.android.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="react-native-swRefresh.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/lib/SwRefreshListView.android.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="351" column="79" selection-start-line="351" selection-start-column="79" selection-end-line="351" selection-end-column="79" />
+              <caret line="351" column="13" selection-start-line="351" selection-start-column="13" selection-end-line="351" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -85,7 +82,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RefreshDemo/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
@@ -98,18 +95,20 @@
       <file leaf-file-name="SwRefreshListView.ios.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/SwRefreshListView.ios.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-              <folding />
+            <state relative-caret-position="805">
+              <caret line="278" column="2" selection-start-line="278" selection-start-column="2" selection-end-line="278" selection-end-column="2" />
+              <folding>
+                <element signature="e#41#91#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SwRefreshScrollView.android.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SwRefreshScrollView.android.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/SwRefreshScrollView.android.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="162" column="20" selection-start-line="162" selection-start-column="20" selection-end-line="162" selection-end-column="77" />
+            <state relative-caret-position="475">
+              <caret line="159" column="23" selection-start-line="159" selection-start-column="23" selection-end-line="159" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -118,7 +117,7 @@
       <file leaf-file-name="SwRefreshScrollView.ios.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/SwRefreshScrollView.ios.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
+            <state relative-caret-position="15">
               <caret line="157" column="20" selection-start-line="157" selection-start-column="2" selection-end-line="157" selection-end-column="20" />
               <folding />
             </state>
@@ -160,10 +159,10 @@
         <option value="$PROJECT_DIR$/RefreshDemo/node_modules/react-native-swRefresh/lib/SwRefreshListView.ios.js" />
         <option value="$PROJECT_DIR$/lib/SwRefreshListView.ios.js" />
         <option value="$PROJECT_DIR$/RefreshDemo/Main.js" />
-        <option value="$PROJECT_DIR$/lib/SwRefreshScrollView.android.js" />
-        <option value="$PROJECT_DIR$/lib/SwRefreshListView.android.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/RefreshDemo/package.json" />
+        <option value="$PROJECT_DIR$/lib/SwRefreshListView.android.js" />
+        <option value="$PROJECT_DIR$/lib/SwRefreshScrollView.android.js" />
       </list>
     </option>
   </component>
@@ -351,12 +350,12 @@
       <workItem from="1480500234916" duration="8919000" />
       <workItem from="1480575399295" duration="2383000" />
       <workItem from="1480668179105" duration="1026000" />
-      <workItem from="1480923564518" duration="3453000" />
+      <workItem from="1480923564518" duration="3667000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48374000" />
+    <option name="totallyTimeSpent" value="48588000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -638,34 +637,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/SwRefreshListView.ios.js">
+    <entry file="file://$PROJECT_DIR$/RefreshDemo/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/SwRefreshScrollView.ios.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="157" column="20" selection-start-line="157" selection-start-column="2" selection-end-line="157" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/SwRefreshScrollView.android.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="162" column="20" selection-start-line="162" selection-start-column="20" selection-end-line="162" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/SwRefreshListView.android.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="351" column="79" selection-start-line="351" selection-start-column="79" selection-end-line="351" selection-end-column="79" />
+        <state relative-caret-position="285">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -678,10 +653,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RefreshDemo/package.json">
+    <entry file="file://$PROJECT_DIR$/lib/SwRefreshScrollView.ios.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        <state relative-caret-position="15">
+          <caret line="157" column="20" selection-start-line="157" selection-start-column="2" selection-end-line="157" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/SwRefreshListView.android.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="351" column="13" selection-start-line="351" selection-start-column="13" selection-end-line="351" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/SwRefreshListView.ios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="805">
+          <caret line="278" column="2" selection-start-line="278" selection-start-column="2" selection-end-line="278" selection-end-column="2" />
+          <folding>
+            <element signature="e#41#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/SwRefreshScrollView.android.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="159" column="23" selection-start-line="159" selection-start-column="23" selection-end-line="159" selection-end-column="23" />
           <folding />
         </state>
       </provider>
