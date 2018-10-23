@@ -111,7 +111,7 @@ endRefresh()
 ```		  	
 		  	
  	   
-##使用:
+## 使用:
 	npm install react-native-swRefresh --save    
 * 导入
 
